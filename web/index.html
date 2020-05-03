@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tablero</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    </head>
+    <body>
+        <h1>Tablero compartido</h1>
+        <div id="output"></div>
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="600" height="300" style="border:1px solid #000000;">
+                    </canvas>
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    <form name="inputForm">
+                        <table>
+                            <tr>
+                                <th>color</th>
+                                <td><input type="radio" name="color" value="#FF0000"  checked>Rojo</td>
+                                <td><input type="radio" name="color" value="#0000FF" >Azul</td>
+                                <td><input type="radio" name="color" value="#FF9900" >Naranja</td>
+                                <td><input type="radio" name="color" value="#33CC33" >verde</td>
+                            </tr>
+                            
+                            <tr>
+                                 <td><input type="button" value="limpiar" onclick="limpiar()">  </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+                </tr>
+            
+        </table>
+            <script type="text/javascript" src="WebSocket.js"></script>
+            <script type="text/javascript" src="tablero.js"></script>
+    </body>
+</html>
